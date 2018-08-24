@@ -1,0 +1,17 @@
+{
+    "name": "root/php-rpgmgch",
+    "authors": [
+        {
+            "name": "Vanoux",
+            "email": "vanessa.roux891@orange.fr"
+        }
+    ],
+    "require": {
+        "phpunit/phpunit": "^6"
+    },
+    "scripts": {
+        "test" : "./vendor/bin/phpunit tests"
+    }
+
+   
+}
