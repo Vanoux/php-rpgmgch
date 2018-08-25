@@ -1,3 +1,4 @@
 <?php
-include('userTable.php')
+// index pour le deploy heroku
+header('location: ./userTable.php')
 ?>
