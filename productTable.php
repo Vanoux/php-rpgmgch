@@ -13,6 +13,8 @@
 <body>
 <!--Création d'un tableau html bootstrap -->
   <h1 class="bg-info text-white text-center display-3">Product Table</h1>
+  <h5 class="bg-light text-black text-left"><a href= "/testOrder.php">Lien Test Order</a></h5>
+
   <div class="container-fluid">
     <table class="table">
       <thead class="thead-light">
