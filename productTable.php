@@ -13,7 +13,6 @@
 <body>
 <!--Création d'un tableau html bootstrap -->
   <h1 class="bg-info text-white text-center display-3">Product Table</h1>
-
   <div class="container-fluid">
     <table class="table">
       <thead class="thead-light">
