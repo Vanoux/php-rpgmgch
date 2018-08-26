@@ -8,11 +8,11 @@ class Client extends User{
     private $billAmount;
     private $cart;
 
-    public function __construct($id, $email, $createAt, $billAmount, $cart)
+    public function __construct($id, $email, $createAt) //$billAmount, $cart)
     {
         parent::__construct($id, $email, $createAt);
-        $this->billAmount = 0;
-        $this->cart = [];
+        // $this->billAmount;
+        // $this->cart[];
     }
 
     public function getBillAmount(){
@@ -32,7 +32,7 @@ class Client extends User{
     //A chaque fois qu'un client achète un produit, sa facture augment du prix du produit et ce produit est ajouté au panier.
     public function buy($product){ 
         $this->addProductToCart($product);
-        $this->billAmount = $this->billAmount + $this->getPrice();
+       // $this->billAmount = $this->billAmount + $this->getPrice();
     }
 }
 

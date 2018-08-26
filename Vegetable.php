@@ -12,6 +12,9 @@ class Vegetable extends Product{
     public function __construct($id, $name, $price, $productorName, $expiresAt) //$isFresh(crée des erreurs !)
     {
         parent::__construct($id, $name, $price);
+        /*Les constructeurs parents ne sont pas appelés implicitement si la classe enfant définit un constructeur. 
+        Si on veux utiliser un constructeur parent, il sera nécessaire de faire appel à parent::__construct() depuis le constructeur enfant.
+        Si l'enfant ne définit pas un constructeur alors il peut être hérité de la classe parent*/
         $this->productorName = $productorName;
         $this->expiresAt = $expiresAt;
         //$this->isFresh = $isFresh;(crée des erreurs!)  
